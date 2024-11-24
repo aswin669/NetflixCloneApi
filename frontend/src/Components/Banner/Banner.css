@@ -1,0 +1,73 @@
+.banner {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  .content {
+    max-width: 500px;
+    margin-left: 30px;
+  }
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .rating {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  .banner_buttons {
+    margin-top: 20px;
+  }
+  .button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: white;
+  }
+  .button.play {
+    background-color: red;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6);
+    animation: glow 1.5s infinite alternate;
+    border-radius: 20px;
+  }
+  .button.my-list {
+    background-color: rgba(51, 51, 51, 0.5);
+    border-radius: 20px;
+  }
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6);
+    }
+    to {
+      box-shadow: 0 0 20px rgba(255, 0, 0, 1), 0 0 30px rgba(255, 0, 0, 0.8);
+    }
+  }
+  .button:hover {
+    background-color: rgba(51, 51, 51, 0.7);
+  }
+  .description {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  .fade_bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(37, 37, 37, 0.61),
+      #111
+    );
+  }
+  
